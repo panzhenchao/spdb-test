@@ -48,7 +48,7 @@ public class BankTest {
     @Test
     public void trade8804() throws Exception {
         String tranDate = "20191017";
-        String acctNo = "952A9997220008092";
+        String acctNo = "930B9997220000387";
         Long tranNo = 1571298452184L;//1571292392022L;//20191017100000008
         String tranContent = SpdpBankPacketUtils.packetTrade8804( tranDate, acctNo, tranNo );
         HashMap<String, Object> result = null;
@@ -76,9 +76,9 @@ public class BankTest {
     @Test
     public void trade8924() throws Exception {
         HashMap<String, String> params = new HashMap<String, String>();
-        params.put( "acctNo", "952A9997220008092" );
-        params.put( "beginDate", "20191017" );
-        params.put( "endDate", "20191017" );
+        params.put( "acctNo", "930B9997220000387" );
+        params.put( "beginDate", "20231210" );
+        params.put( "endDate", "20231211" );
         params.put( "transAmount", "" );
         params.put( "subAccount", "" );
         params.put( "subAcctName", "" );
